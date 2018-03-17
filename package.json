@@ -1,10 +1,10 @@
 {
-  "name": "nodeclub",
-  "version": "2.1.1",
+  "name": "club",
+  "version": "1.0.0",
   "private": true,
   "main": "app.js",
-  "description": "A Node.js bbs using MongoDB",
-  "repository": "https://github.com/cnodejs/nodeclub",
+  "description": "otcgo club",
+  "repository": "https://github.com/OTCGO/club.git",
   "dependencies": {
     "async": "1.5.2",
     "bcryptjs": "2.3.0",
