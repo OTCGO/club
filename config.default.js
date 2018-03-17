@@ -10,20 +10,20 @@ var config = {
 
   get mini_assets() { return !this.debug; }, // 是否启用静态文件的合并压缩，详见视图中的Loader
 
-  name: 'Nodeclub', // 社区名字
-  description: 'CNode：Node.js专业中文社区', // 社区的描述
-  keywords: 'nodejs, node, express, connect, socket.io',
+  name: 'Otcgo club', // 社区名字
+  description: 'otcgo社区', // 社区的描述
+  keywords: 'neo nep5',
 
   // 添加到 html head 中的信息
   site_headers: [
     '<meta name="author" content="EDP@TAOBAO" />'
   ],
-  site_logo: '/public/images/cnodejs_light.svg', // default is `name`
+  site_logo: '', // default is `name`
   site_icon: '/public/images/cnode_icon_32.png', // 默认没有 favicon, 这里填写网址
   // 右上角的导航区
   site_navs: [
     // 格式 [ path, title, [target=''] ]
-    [ '/about', '关于' ]
+    // [ '/about', '关于' ]
   ],
   // cdn host，如 http://cnodejs.qiniudn.com
   site_static_host: '', // 静态文件存储域名
@@ -35,7 +35,7 @@ var config = {
   cnzz_tracker_id: '',
 
   // mongodb 配置
-  db: 'mongodb://127.0.0.1/node_club_dev',
+  db: 'mongodb://127.0.0.1/otcgo_club',
 
   // redis 配置，默认是本地
   redis_host: '127.0.0.1',
@@ -43,11 +43,11 @@ var config = {
   redis_db: 0,
   redis_password: '',
 
-  session_secret: 'node_club_secret', // 务必修改
-  auth_cookie_name: 'node_club',
+  session_secret: 'otcgo_club_secret', // 务必修改
+  auth_cookie_name: 'notcgo_club',
 
   // 程序运行的端口
-  port: 3000,
+  port: 5002,
 
   // 话题列表显示的话题数量
   list_topic_count: 20,
@@ -118,6 +118,7 @@ var config = {
 
   // 版块
   tabs: [
+    ['activity', '活动'],
     ['share', '分享'],
     ['ask', '问答'],
     ['job', '招聘'],
@@ -137,7 +138,7 @@ var config = {
 };
 
 if (process.env.NODE_ENV === 'test') {
-  config.db = 'mongodb://127.0.0.1/node_club_test';
+  config.db = 'mongodb://127.0.0.1/otcgo_club';
 }
 
 module.exports = config;
