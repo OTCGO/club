@@ -65,6 +65,7 @@
   },
   "scripts": {
     "start": "nodemon app.js",
-    "test": "make test"
+    "test": "make test",
+    "build": "./node_modules/loader-builder/bin/builder views ."
   }
 }
